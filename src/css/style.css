@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+:root {
+  --cortext: #fff;
+  --text: #134f5b;
+  --color-dark-50:#797984
+  --color-dark-100:#312d37;
+  --color-dark-900:#000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  padding: 30px 2%;
+}
+
+header {
+  background-image: url(../img/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+#click1 {
+    display: none;
+}
+
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  background: rgba(10, 10, 10, 0.8);
+  box-shadow: 13x solid #000;
+  /* padding: 30px 0; */
+}
+
+.nav-logo {
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--cortext);
+}
+
+.lua {
+  font-size: 20px;
+  font-weight: normal;  
+  color: var(--cortext);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navbar li {
+  padding: 10px 15px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;  
+  color: var(--cortext);
+}
+
+.navbar a.active,
+.navbar a:hover {
+   background-color: #134f5b;
+   font-size: 23px;
+   border-radius: 5px;
+   padding: 5px 15px;
+}
+
+.menu-bar {
+    font-size: 2.5em;
+    display: none;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+div.header-title {
+  padding: 300px 10%;
+}
+
+div.header-title p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cortext);
+  margin-bottom: 1.5rem;
+}
+
+div.header-title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--cortext);
+  max-width: 700px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  padding: 30px auto;
+}
+
+.header-title .btn {
+  padding: 17px 45px;
+  background-color: #134f5b;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: var(--cortext);
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+div.social-icons {
+  margin-top: 3rem;
+}
+
+div.social-icons a {
+  padding: 20px;
+  cursor: pointer;
+  color: var(--cortext);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* ======= SECTION SOBRE ======= */
+
+.sobre-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sobre-container .informacao h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  max-width: 550px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sobre-container .informacao p {
+  font-size: 1rem;
+  font-weight: normal;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 17px 45px;
+  background-color: #134f5b;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: var(--cortext);
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.sobre-container .sobre-img img {
+  height: 400px;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+/* ========== SECTION ROTEIROS ========== */
+
+.roteiros-container {
+  width: 100%;
+  align-items: center;
+}
+
+.roteiros-container h2 {
+  text-align: center;
+}
+
+.roteiros-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.roteiro-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.roteiro-card .card-img {
+  display: flex;
+  height: 500px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000000 100%);
+}
+
+.card-img img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.card-title {
+  position: absolute;
+  left: 20px;
+  margin-top: 400px;
+  color: var(--cortext);
+}
+
+.card-title h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.card-title p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.roteiro-icons {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.roteiro-icons p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.roteiro-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.roteiro-card .card-icon {
+  display: block;
+  margin: auto 10px;
+}
+
+.roteiro-card .card-icon img {
+  width: 155px;
+  height: 155px;
+  margin: 35px;
+}
+.roteiro-card-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-card1 img {
+  max-width: 100%;
+}
+
+.roteiro-video {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 5%;
+}
+
+.roteiro-video p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.roteiro-video .video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.roteiro-video video {
+  width: 800px;
+  height: 500px;
+}
+
+/* ========== DESTINOS ========== */
+
+.destino-container {
+  width: 100%;
+  padding: 50px auto;
+}
+
+.destino-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 10%;
+  gap: 2rem;
+  position: relative;
+}
+
+.destino-card {
+  display: flex;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000000 100%);
+}
+
+.destino-card img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.destino-title {
+  position: absolute;
+  left: 20px;
+  margin-top: 300px;
+  color: var(--cortext);
+}
+
+.destino-card a {
+  position: absolute;
+  color: var(--cortext);
+  background-color: #134f5b;
+  left: 180px;
+  font-size: 2rem;
+  margin-top: 330px;
+  padding: 3px 15px;
+}
+
+.destino-title h3 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.destino-title p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: var(--cortext);
+}
+
+/* ========== SECTION CONTATO ========== */
+
+section.contato {
+  padding-bottom: 100px;
+}
+
+.contato-container {
+  background: #134f5b;
+  height: 100%;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  margin: auto 200px;
+}
+
+.contato-container h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--cortext);
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.contato-container p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--cortext);
+  padding-bottom: 10px;
+}
+
+.contato-container .input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 5px 30px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.contato-container input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #070707;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.contato-btn {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: var(--text);
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* ========== SECTION FOOTER ========== */
+
+.footer-container {
+  height: 100%;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1b1b1b;
+  display: flex;
+}
+
+.footer-container h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--cortext);
+  padding-bottom: 10px;
+}
+
+.footer-container p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--cortext);
+  padding-bottom: 10px;
+}
+
+.footer-container .navbar-footer ul li {
+  padding: 10px 20px;
+}
+
+.navbar-footer ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: var(--cortext);
+}
+
+@media screen and (max-width: 768px) {
+  .contato {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contato-container {
+    width: 100%;
+    margin: 2%;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}

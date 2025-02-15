@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+    nav.navbar ul {
+        position: fixed;
+        top:80px;
+        right: -100%;
+        background:  rgba(22, 22, 22, 0.8);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: right 0.5s linear;
+    }
+
+    nav.navbar ul li {
+        display: block;
+        max-width: 50px 0;
+        line-height: 30px;
+    }
+
+    nav .menu-bar {
+        display: block;
+        width: 100px;
+        text-align: right
+    }
+
+    #click1:checked ~ ul {
+        right: 0;
+    }
+}
